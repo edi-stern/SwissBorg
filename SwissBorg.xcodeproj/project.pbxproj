@@ -25,6 +25,7 @@
 		448B593A284F387700F740E1 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B5939284F387700F740E1 /* ApiError.swift */; };
 		448B593C284F389C00F740E1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B593B284F389C00F740E1 /* NetworkService.swift */; };
 		44A8019A284F5D7800F5D251 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A80199284F5D7800F5D251 /* MainViewModel.swift */; };
+		44DA44842850A36D00BB0F32 /* MockMainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA44832850A36D00BB0F32 /* MockMainService.swift */; };
 		44DF60702850796D0084F834 /* PairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF606F2850796D0084F834 /* PairTableViewCell.swift */; };
 		44DF6073285090E70084F834 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF6072285090E70084F834 /* UIViewController + Extension.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		448B5939284F387700F740E1 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		448B593B284F389C00F740E1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		44A80199284F5D7800F5D251 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		44DA44832850A36D00BB0F32 /* MockMainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMainService.swift; sourceTree = "<group>"; };
 		44DF606F2850796D0084F834 /* PairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTableViewCell.swift; sourceTree = "<group>"; };
 		44DF6072285090E70084F834 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				44DF6071285090D40084F834 /* Resources */,
 				44A80198284F5D5400F5D251 /* MainScreen */,
 				448B5928284F2E9100F740E1 /* Enitites */,
+				44DA44822850A36000BB0F32 /* Mock */,
 				448B5923284F2AEC00F740E1 /* NetworkLayer */,
 				448B58F4284F29EE00F740E1 /* LaunchScreen.storyboard */,
 				448B58F7284F29EE00F740E1 /* Info.plist */,
@@ -178,6 +181,15 @@
 				44DF606E285079560084F834 /* Cell */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		44DA44822850A36000BB0F32 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				44DA44832850A36D00BB0F32 /* MockMainService.swift */,
+			);
+			name = Mock;
+			path = NetworkLayer/Mock;
 			sourceTree = "<group>";
 		};
 		44DF606E285079560084F834 /* Cell */ = {
@@ -345,6 +357,7 @@
 				44A8019A284F5D7800F5D251 /* MainViewModel.swift in Sources */,
 				448B58EC284F29ED00F740E1 /* SceneDelegate.swift in Sources */,
 				448B5930284F331700F740E1 /* Pair.swift in Sources */,
+				44DA44842850A36D00BB0F32 /* MockMainService.swift in Sources */,
 				448B5938284F37CC00F740E1 /* ApiRouter.swift in Sources */,
 				44DF6073285090E70084F834 /* UIViewController + Extension.swift in Sources */,
 				448B5936284F33E700F740E1 /* Constants.swift in Sources */,

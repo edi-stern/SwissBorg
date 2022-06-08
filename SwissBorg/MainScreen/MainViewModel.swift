@@ -13,7 +13,7 @@ import RxRelay
 
 protocol MainViewModel {
     var error: PublishSubject<String> { get }
-    var mainService: MainService { get }
+    var mainService: MainServiceInterface { get }
     var disposeBag: DisposeBag { get }
     var pairs: BehaviorRelay<[Pair]> { get }
     var filteredPairs: BehaviorRelay<[Pair]> { get }
@@ -26,7 +26,7 @@ final class DefaultViewModel: MainViewModel {
     
     // MARK: Variables
     var error = PublishSubject<String>()
-    var mainService: MainService
+    var mainService: MainServiceInterface
     var disposeBag = DisposeBag()
     var pairs = BehaviorRelay<[Pair]>(value: [])
     var filteredPairs = BehaviorRelay<[Pair]>(value: [])
@@ -34,7 +34,7 @@ final class DefaultViewModel: MainViewModel {
     
     // MARK: Init
     
-    init(mainService: MainService) {
+    init(mainService: MainServiceInterface) {
         self.mainService = mainService
         
         Observable<Int>.interval(.seconds(5), scheduler: MainScheduler.instance)
