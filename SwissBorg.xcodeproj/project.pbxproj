@@ -12,12 +12,6 @@
 		448B58EE284F29ED00F740E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B58ED284F29ED00F740E1 /* MainViewController.swift */; };
 		448B58F3284F29EE00F740E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448B58F2284F29EE00F740E1 /* Assets.xcassets */; };
 		448B58F6284F29EE00F740E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448B58F4284F29EE00F740E1 /* LaunchScreen.storyboard */; };
-		448B5901284F29EE00F740E1 /* SwissBorgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B5900284F29EE00F740E1 /* SwissBorgTests.swift */; };
-		448B590B284F29EE00F740E1 /* SwissBorgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B590A284F29EE00F740E1 /* SwissBorgUITests.swift */; };
-		448B590D284F29EE00F740E1 /* SwissBorgUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B590C284F29EE00F740E1 /* SwissBorgUITestsLaunchTests.swift */; };
-		448B591D284F2AAE00F740E1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 448B591C284F2AAE00F740E1 /* RxCocoa */; };
-		448B591F284F2AAE00F740E1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 448B591E284F2AAE00F740E1 /* RxSwift */; };
-		448B5922284F2AE200F740E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 448B5921284F2AE200F740E1 /* Alamofire */; };
 		448B592E284F32F700F740E1 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B592D284F32F700F740E1 /* MainService.swift */; };
 		448B5930284F331700F740E1 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B592F284F331700F740E1 /* Pair.swift */; };
 		448B5936284F33E700F740E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B5935284F33E700F740E1 /* Constants.swift */; };
@@ -28,6 +22,13 @@
 		44DA44842850A36D00BB0F32 /* MockMainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA44832850A36D00BB0F32 /* MockMainService.swift */; };
 		44DF60702850796D0084F834 /* PairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF606F2850796D0084F834 /* PairTableViewCell.swift */; };
 		44DF6073285090E70084F834 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF6072285090E70084F834 /* UIViewController + Extension.swift */; };
+		F8579F4928526344008E3860 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F4828526344008E3860 /* RxBlocking */; };
+		F8579F4B28526344008E3860 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F4A28526344008E3860 /* RxCocoa */; };
+		F8579F4D28526344008E3860 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F4C28526344008E3860 /* RxSwift */; };
+		F8579F4F28526344008E3860 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F4E28526344008E3860 /* RxTest */; };
+		F8579F52285263CB008E3860 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F51285263CB008E3860 /* Alamofire */; };
+		F8579F55285264F9008E3860 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8579F54285264F9008E3860 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F8579F5828526524008E3860 /* SwissBorgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8579F5728526524008E3860 /* SwissBorgTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +57,7 @@
 		448B58F5284F29EE00F740E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448B58F7284F29EE00F740E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448B58FC284F29EE00F740E1 /* SwissBorgTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwissBorgTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		448B5900284F29EE00F740E1 /* SwissBorgTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwissBorgTests.swift; sourceTree = "<group>"; };
 		448B5906284F29EE00F740E1 /* SwissBorgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwissBorgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		448B590A284F29EE00F740E1 /* SwissBorgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwissBorgUITests.swift; sourceTree = "<group>"; };
-		448B590C284F29EE00F740E1 /* SwissBorgUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwissBorgUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		448B592D284F32F700F740E1 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		448B592F284F331700F740E1 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		448B5935284F33E700F740E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		44DA44832850A36D00BB0F32 /* MockMainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMainService.swift; sourceTree = "<group>"; };
 		44DF606F2850796D0084F834 /* PairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTableViewCell.swift; sourceTree = "<group>"; };
 		44DF6072285090E70084F834 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		F8579F54285264F9008E3860 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8579F5728526524008E3860 /* SwissBorgTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwissBorgTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448B5922284F2AE200F740E1 /* Alamofire in Frameworks */,
-				448B591F284F2AAE00F740E1 /* RxSwift in Frameworks */,
-				448B591D284F2AAE00F740E1 /* RxCocoa in Frameworks */,
+				F8579F55285264F9008E3860 /* XCTest.framework in Frameworks */,
+				F8579F52285263CB008E3860 /* Alamofire in Frameworks */,
+				F8579F4F28526344008E3860 /* RxTest in Frameworks */,
+				F8579F4D28526344008E3860 /* RxSwift in Frameworks */,
+				F8579F4B28526344008E3860 /* RxCocoa in Frameworks */,
+				F8579F4928526344008E3860 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +108,8 @@
 			children = (
 				448B58E8284F29ED00F740E1 /* SwissBorg */,
 				448B58FF284F29EE00F740E1 /* SwissBorgTests */,
-				448B5909284F29EE00F740E1 /* SwissBorgUITests */,
 				448B58E7284F29ED00F740E1 /* Products */,
+				F8579F53285264F9008E3860 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,18 +142,9 @@
 		448B58FF284F29EE00F740E1 /* SwissBorgTests */ = {
 			isa = PBXGroup;
 			children = (
-				448B5900284F29EE00F740E1 /* SwissBorgTests.swift */,
+				F8579F5728526524008E3860 /* SwissBorgTests.swift */,
 			);
 			path = SwissBorgTests;
-			sourceTree = "<group>";
-		};
-		448B5909284F29EE00F740E1 /* SwissBorgUITests */ = {
-			isa = PBXGroup;
-			children = (
-				448B590A284F29EE00F740E1 /* SwissBorgUITests.swift */,
-				448B590C284F29EE00F740E1 /* SwissBorgUITestsLaunchTests.swift */,
-			);
-			path = SwissBorgUITests;
 			sourceTree = "<group>";
 		};
 		448B5923284F2AEC00F740E1 /* NetworkLayer */ = {
@@ -209,6 +203,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F8579F53285264F9008E3860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8579F54285264F9008E3860 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +228,11 @@
 			);
 			name = SwissBorg;
 			packageProductDependencies = (
-				448B591C284F2AAE00F740E1 /* RxCocoa */,
-				448B591E284F2AAE00F740E1 /* RxSwift */,
-				448B5921284F2AE200F740E1 /* Alamofire */,
+				F8579F4828526344008E3860 /* RxBlocking */,
+				F8579F4A28526344008E3860 /* RxCocoa */,
+				F8579F4C28526344008E3860 /* RxSwift */,
+				F8579F4E28526344008E3860 /* RxTest */,
+				F8579F51285263CB008E3860 /* Alamofire */,
 			);
 			productName = SwissBorg;
 			productReference = 448B58E6284F29ED00F740E1 /* SwissBorg.app */;
@@ -285,6 +289,7 @@
 					};
 					448B58FB284F29EE00F740E1 = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1320;
 						TestTargetID = 448B58E5284F29ED00F740E1;
 					};
 					448B5905284F29EE00F740E1 = {
@@ -303,8 +308,8 @@
 			);
 			mainGroup = 448B58DD284F29ED00F740E1;
 			packageReferences = (
-				448B591B284F2AAE00F740E1 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				448B5920284F2AE200F740E1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F8579F50285263CB008E3860 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 448B58E7284F29ED00F740E1 /* Products */;
 			projectDirPath = "";
@@ -368,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448B5901284F29EE00F740E1 /* SwissBorgTests.swift in Sources */,
+				F8579F5828526524008E3860 /* SwissBorgTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +381,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448B590D284F29EE00F740E1 /* SwissBorgUITestsLaunchTests.swift in Sources */,
-				448B590B284F29EE00F740E1 /* SwissBorgUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +461,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_VERIFY_BITCODE = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -512,7 +516,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_VERIFY_BITCODE = NO;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -542,6 +547,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-weak_framework",
+					"\"XCTest\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ro.edi.SwissBorg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -570,6 +579,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-weak_framework",
+					"\"XCTest\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ro.edi.SwissBorg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -583,15 +596,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BK39LR9Z56;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ro.edi.SwissBorgTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwissBorg.app/SwissBorg";
@@ -603,11 +623,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BK39LR9Z56;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ro.edi.SwissBorgTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,17 +722,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		448B591B284F2AAE00F740E1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
-		448B5920284F2AE200F740E1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		F8579F50285263CB008E3860 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire#installation";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
@@ -715,19 +741,29 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		448B591C284F2AAE00F740E1 /* RxCocoa */ = {
+		F8579F4828526344008E3860 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 448B591B284F2AAE00F740E1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		F8579F4A28526344008E3860 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		448B591E284F2AAE00F740E1 /* RxSwift */ = {
+		F8579F4C28526344008E3860 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 448B591B284F2AAE00F740E1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		448B5921284F2AE200F740E1 /* Alamofire */ = {
+		F8579F4E28526344008E3860 /* RxTest */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 448B5920284F2AE200F740E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F8579F4728526344008E3860 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		F8579F51285263CB008E3860 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8579F50285263CB008E3860 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
