@@ -45,7 +45,8 @@ final class DefaultViewModel: MainViewModel {
             })
             .disposed(by: disposeBag)
 
-        Observable.combineLatest(pairs, searchObserver).asDriver(onErrorJustReturn: ([], ""))
+        Observable.combineLatest(pairs, searchObserver)
+            .asDriver(onErrorJustReturn: ([], ""))
             .drive(onNext: { [weak self] pairs, text in
                 self?.filteredPairs.accept(text.isEmpty ? pairs : pairs.filter { $0.name.contains(text.uppercased()) })
             })

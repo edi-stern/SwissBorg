@@ -55,7 +55,7 @@ final class PairTableViewCell: UITableViewCell {
 
     func configure(item: Pair) {
         nameLabel.text = item.name
-        valueLabel.text = "\(item.bid) $"
+        valueLabel.text = "\(item.lastPrice) $"
         logoImageView.image = UIImage(named: item.name)
     }
 

@@ -46,6 +46,13 @@ class SwissBorgTests: XCTestCase {
         XCTAssertTrue(viewModel.pairs.value.contains{ $0.symbol == "LTC" && $0.lastPrice == 61.62 })
     }
     
+    func testSearchObserver() {
+        viewModel.searchObserver.accept("B")
+        XCTAssertEqual(viewModel.filteredPairs.value.count, 2)
+        XCTAssertTrue(viewModel.filteredPairs.value.contains{ $0.symbol == "CHSB" && $0.lastPrice == 0.024 })
+        XCTAssertFalse(viewModel.filteredPairs.value.contains{ $0.symbol == "EOS" && $0.lastPrice == 0.024 })
+    }
+    
     func testViewModelErrorFetch() {
         mainService = MockErrorMainService()
         viewModel = DefaultViewModel(mainService: mainService)
