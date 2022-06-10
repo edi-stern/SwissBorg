@@ -77,6 +77,7 @@ final class MainViewController: UITableViewController {
 
     private func bind() {
         viewModel.error.subscribe(onNext: { [weak self] errorMessage in
+            guard let errorMessage = errorMessage else { return }
             self?.showAlert(withTitle: "There was an error", withMessage: errorMessage)
         })
         .disposed(by: viewModel.disposeBag)

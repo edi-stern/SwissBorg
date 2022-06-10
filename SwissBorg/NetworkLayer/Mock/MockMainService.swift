@@ -11,11 +11,11 @@ import Alamofire
 
 final class MockMainService: MainServiceInterface {
     var network: NetworkServiceInterface
-
+    
     init() {
         self.network = MockNetworkService()
     }
-
+    
     func getPosts(symbols: String) -> Observable<[Pair]> {
         return Observable.just([Pair(symbol: "BTC", lastPrice: 33000.0),
                                 Pair(symbol: "ETH", lastPrice: 3000.0),
@@ -26,13 +26,27 @@ final class MockMainService: MainServiceInterface {
     }
 }
 
+final class MockErrorMainService: MainServiceInterface {
+    var network: NetworkServiceInterface
+    
+    init() {
+        self.network = MockNetworkService()
+    }
+    
+    func getPosts(symbols: String) -> Observable<[Pair]> {
+        return Observable.error(ApiError.notFound)
+    }
+}
+
 final class MockNetworkService: NetworkServiceInterface {
     func request<T>(_ urlConvertible: URLRequestConvertible) -> Observable<T> where T : Decodable, T : Encodable {
         return Observable.empty()
     }
 }
 
-    // MARK: Mock Pair
+
+
+// MARK: Mock Pair
 private extension Pair {
     init (symbol: String, lastPrice: Float) {
         self.symbol = symbol

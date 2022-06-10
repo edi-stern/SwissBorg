@@ -12,12 +12,13 @@ import RxRelay
 // MARK: ViewModelProtocl
 
 protocol MainViewModel {
-    var error: PublishSubject<String> { get }
+    var error: BehaviorRelay<String?> { get }
     var mainService: MainServiceInterface { get }
     var disposeBag: DisposeBag { get }
     var pairs: BehaviorRelay<[Pair]> { get }
     var filteredPairs: BehaviorRelay<[Pair]> { get }
     var searchObserver: BehaviorRelay<String> { get }
+    func fetchData()
 }
 
 // MARK: DefaultViewModel
@@ -25,7 +26,7 @@ protocol MainViewModel {
 final class DefaultViewModel: MainViewModel {
     
     // MARK: Variables
-    var error = PublishSubject<String>()
+    var error = BehaviorRelay<String?>(value: nil)
     var mainService: MainServiceInterface
     var disposeBag = DisposeBag()
     var pairs = BehaviorRelay<[Pair]>(value: [])
@@ -51,20 +52,20 @@ final class DefaultViewModel: MainViewModel {
             .disposed(by: disposeBag)
     }
     
-    private func fetchData() {
+    internal func fetchData() {
         mainService.getPosts(symbols: Constants.symbols)
             .subscribe(onNext: { [weak self] pairs in
                 self?.pairs.accept(pairs)
             }, onError: { [weak self] error in
                 switch error {
                 case ApiError.conflict:
-                    self?.error.onNext("Conflict error")
+                    self?.error.accept("Conflict error")
                 case ApiError.forbidden:
-                    self?.error.onNext("Forbidden error")
+                    self?.error.accept("Forbidden error")
                 case ApiError.notFound:
-                    self?.error.onNext("Not found error")
+                    self?.error.accept("Not found error")
                 default:
-                    self?.error.onNext("Unknown error: \(error.localizedDescription)")
+                    self?.error.accept("Unknown error: \(error.localizedDescription)")
                 }
             })
             .disposed(by: disposeBag)

@@ -28,7 +28,7 @@
 		F8579F4F28526344008E3860 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F4E28526344008E3860 /* RxTest */; };
 		F8579F52285263CB008E3860 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8579F51285263CB008E3860 /* Alamofire */; };
 		F8579F55285264F9008E3860 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8579F54285264F9008E3860 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		F8579F5828526524008E3860 /* SwissBorgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8579F5728526524008E3860 /* SwissBorgTests.swift */; };
+		F8E83C27285337C50010BAE4 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E83C26285337C50010BAE4 /* MainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 		44DF606F2850796D0084F834 /* PairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTableViewCell.swift; sourceTree = "<group>"; };
 		44DF6072285090E70084F834 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		F8579F54285264F9008E3860 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F8579F5728526524008E3860 /* SwissBorgTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwissBorgTests.swift; sourceTree = "<group>"; };
+		F8E83C26285337C50010BAE4 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 		448B58FF284F29EE00F740E1 /* SwissBorgTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8579F5728526524008E3860 /* SwissBorgTests.swift */,
+				F8E83C26285337C50010BAE4 /* MainTests.swift */,
 			);
 			path = SwissBorgTests;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8579F5828526524008E3860 /* SwissBorgTests.swift in Sources */,
+				F8E83C27285337C50010BAE4 /* MainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_VERIFY_BITCODE = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -516,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_VERIFY_BITCODE = NO;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -601,7 +601,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BK39LR9Z56;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,7 +628,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BK39LR9Z56;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
