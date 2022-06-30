@@ -112,7 +112,7 @@ extension MainViewController {
     }
 }
 
-// MARK: TableViewDelegates
+// MARK: SearchBarDelegate
 
 extension MainViewController {
     private func observeSearchBar() {

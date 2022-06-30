@@ -18,7 +18,6 @@ protocol MainViewModel {
     var pairs: BehaviorRelay<[Pair]> { get }
     var filteredPairs: BehaviorRelay<[Pair]> { get }
     var searchObserver: BehaviorRelay<String> { get }
-    func fetchData()
 }
 
 // MARK: DefaultViewModel
@@ -44,7 +43,7 @@ final class DefaultViewModel: MainViewModel {
                 self?.fetchData()
             })
             .disposed(by: disposeBag)
-
+        
         Observable.combineLatest(pairs, searchObserver)
             .asDriver(onErrorJustReturn: ([], ""))
             .drive(onNext: { [weak self] pairs, text in
@@ -53,19 +52,14 @@ final class DefaultViewModel: MainViewModel {
             .disposed(by: disposeBag)
     }
     
-    internal func fetchData() {
+    private func fetchData() {
         mainService.getPosts(symbols: Constants.symbols)
             .subscribe(onNext: { [weak self] pairs in
                 self?.pairs.accept(pairs)
             }, onError: { [weak self] error in
-                switch error {
-                case ApiError.conflict:
-                    self?.error.accept("Conflict error")
-                case ApiError.forbidden:
-                    self?.error.accept("Forbidden error")
-                case ApiError.notFound:
-                    self?.error.accept("Not found error")
-                default:
+                if let error = error as? ApiError {
+                    self?.error.accept(error.description)
+                } else {
                     self?.error.accept("Unknown error: \(error.localizedDescription)")
                 }
             })
